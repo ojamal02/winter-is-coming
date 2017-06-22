@@ -16,6 +16,9 @@ html {
   padding: 3px; 
   text-align: center; 
   border-radius: 5px;
+  margin: 125px; 
+  animation: nudge 5s linear infinite alternate;
+
 }
 
 h1 {
@@ -26,11 +29,55 @@ h1 {
 }
 
 .grab-quote {
-    background-image: url("http://icons.iconarchive.com/icons/limav/game-of-thrones/128/Stark-icon.png");
+    background-image: url("http://orig07.deviantart.net/5608/f/2013/213/9/2/game_of_thrones___jon_snow_and_ghost_icon_by_zappyattack-d6g9jq4.gif");
  border: 0;  
- height: 128px;
-  width: 128px;
+ height: 50px;
+  width: 50px;
   text-align: center;
   background-color: transparent;
   margin-top: 10px;
+}
+
+@-webkit-keyframes Rotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes Rotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes Rotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+.grab-quote{
+    -webkit-animation-name: Rotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: Rotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: Rotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(0, 25px);
+  }
+  
+  80% {
+    transform: translate(0,-25px);
+  }
 }
