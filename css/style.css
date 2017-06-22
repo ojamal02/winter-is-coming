@@ -18,6 +18,7 @@ html {
   border-radius: 5px;
   margin: 125px; 
   animation: nudge 5s linear infinite alternate;
+
 }
 
 h1 {
@@ -47,7 +48,7 @@ h1 {
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate
+@-ms-keyframes Rotate
 {
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
@@ -80,4 +81,3 @@ h1 {
     transform: translate(0,-25px);
   }
 }
-
